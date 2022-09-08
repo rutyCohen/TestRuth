@@ -1,0 +1,5 @@
+7
+POST/users?usersId={Ids}
+POST is more safety then GET because you send in the body of the request
+PUT/users/{id}
+POST/users?users={users}
