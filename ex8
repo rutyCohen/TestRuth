@@ -1,0 +1,13 @@
+8
+
+Access Token
+These tokens usually have a short lifespan for security purpose. When it expires, the user must authenticate again to get a new access 
+token limiting the exposure of the fact that it is a bearer token.
+Access token must never be used for authentication.
+
+Refresh Token
+This token is a long-lived token compared to the access token and is used to request a new access token in cases where it is expired without user interaction.
+It can be considered as credentials used to obtain access tokens.
+It's allowed for long-lived access and highly confidential.
+Refresh tokens can be used for grant types – authorization code and password credentials grant.
+Refresh tokens are intended for use only with authorization servers and are never sent to resource servers
