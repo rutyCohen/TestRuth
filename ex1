@@ -1,0 +1,10 @@
+1.
+We can save time by not calling the same function twice
+Like this:
+async function myFunc() {
+const numberFromServer = await getNumberFromServer();// 3 sec
+ let x1 = numberFromServer;
+let x2 = numberFromServer ;
+return x1 + x2; }
+I put the call to another variable because I saw that both variables were defined as let – x1 and x2 , and I understand maybe they 
+changed (because they have not been defined as const)
