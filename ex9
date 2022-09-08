@@ -1,0 +1,3 @@
+9
+The single value for the q parameter:
+mimeType ='application/vnd.google-apps.folder.folderId="1234"&& uploadType = "pdf" || sharedWithMe && uploadType = "mp3" || fullText contains "important" && trashed = true'
