@@ -1,0 +1,11 @@
+•	Because they didn't use the await ,the function is synchronous  and he could reach the next line before he finished the previous line. It means that the second loop can happen before the first loop and it will throw an error because no values were returned from the first loop 
+•	This is my solution:
+ async function run1000(): Promise<void> {
+    const promises: Promise<number>[] = [];
+    for(let i=0; i< 1000;i++) {
+      promises.push(await getNumberFromServer()); 
+ 	}
+     for(const p of promises){
+        await p
+    }
+}
